@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event summary</title>
+</head>
+
+<body>
+    <h1 id="mouse-header">More mouse event</h1>
+    <button onclick="handleClick()">Click Me</button>
+    <input id="email-field" type="text" placeholder="your email address">
+    <script>
+        function handleClick() {
+            document.body.style.backgroundColor = 'orange';
+        }
+
+        document.getElementById('email-field').addEventListener('keyup', function (event) {
+            console.log(event.target.value);
+        })
+        //mouse move
+        // document.getElementById('mouse-header').addEventListener('mousemove', function () {
+        //     console.log('mouse is moving ,giving me shurshuri');
+        // })
+
+        // //mouse enter
+        // document.getElementById('mouse-header').addEventListener('mouseenter', function () {
+        //     console.log('mouse is entering ,giving me shurshuri');
+        // })
+        //mouse out
+        document.getElementById('mouse-header').addEventListener('mouseout', function () {
+            console.log('mouse tumi koi jao');
+        })
+    </script>
+</body>
+
+</html>

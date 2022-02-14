@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overall module scenery</title>
+</head>
+
+<body>
+    <section>
+        <h1>Welcome To my event show</h1>
+        <!-- 1st ways  -->
+        <button onclick="document.body.style.backgroundColor='lightcoral'">Click me:lightcoral</button>
+        <!-- 2nd ways  -->
+        <button onclick="makeBlueColor()">Click me:blue</button>
+        <!-- 3rd ways  -->
+        <button id="make-green">Click me:green</button>
+        <!-- 4th ways  -->
+        <button id="make-yellow">Click me:yellow</button>
+        <!-- 5th ways  -->
+        <button id="make-gray">Click me:gray</button>
+        <!-- 6th ways  -->
+        <button id="make-orange">Click me:orange</button>
+        <!-- 7th ways  -->
+        <button id="make-brown">Click me:brown</button>
+
+    </section>
+    <section>
+        <!-- for input display  -->
+        <div id="input-div">
+            <h1>Enter your name</h1>
+        </div>
+        <input id="name-input" type="text" placeholder="your name">
+        <button id="submit-button">Submit</button>
+    </section>
+    <!-- for comment display  -->
+    <div id="comment-div">
+        <h1>Your Comments</h1>
+    </div>
+    <textarea name="" id="comment-area" cols="60" rows="5"></textarea>
+    <button id="post-button">post</button>
+    <!-- for delete confirmation button  -->
+    <h1>Top blogs</h1>
+    <h2 id="secrete">Top secrete messeage</h2>
+    <input id="input-delete" type="text" placeholder="please type delete">
+    <button id="delete-button" disabled>Delete</button>
+
+    <section>
+        <!-- event delegate process  -->
+        <h2>Event Delegate</h2>
+        <ul id="item-container">
+            <li class="item">Lorem, ipsum.</li>
+            <li class="item">Pariatur, sequi.</li>
+            <li class="item">Soluta, molestiae.</li>
+            <li class="item">Animi, aliquam!</li>
+            <li class="item">Minus, a!</li>
+            <li class="item">Veniam, incidunt.</li>
+
+        </ul>
+        <button id="add-items">Add item</button>
+
+    </section>
+    <section id="orange">
+        <div>
+            <h1>Top Secrete</h1>
+            <h2 id="delete-text">What is your name?Who are you?</h2>
+        </div>
+        <input id="delete-confirmation-input" type="text" placeholder="please type delete">
+        <button id="delete-confirmation-button" disabled>Delete</button>
+    </section>
+    <script src="js/amnetei-banailam.js"></script>
+</body>
+
+
+</html>

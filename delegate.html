@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event delegate</title>
+</head>
+
+<body>
+    <h2>Event Delegate</h2>
+    <ul id="item-container">
+        <li class="item">Lorem, ipsum.</li>
+        <li class="item">Pariatur, sequi.</li>
+        <li class="item">Soluta, molestiae.</li>
+        <li class="item">Animi, aliquam!</li>
+        <li class="item">Minus, a!</li>
+        <li class="item">Veniam, incidunt.</li>
+
+    </ul>
+    <button id="add-items">Add item</button>
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for (const item of items) {
+        //     item.addEventListener('click', function (event) {
+        //         // document.getElementById('item-container').removeChild(item);
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+        document.getElementById('add-items').addEventListener('click', function () {
+            const newItem = document.createElement('li');
+            newItem.classList.add('item');
+            newItem.innerText = 'maruf bai';
+            const parent = document.getElementById('item-container');
+            parent.appendChild(newItem);
+
+        })
+
+        document.getElementById('item-container').addEventListener('click', function (event) {
+            //event.target access item
+            //event delegate
+            event.target.parentNode.removeChild(event.target);
+        })
+    </script>
+</body>
+
+</html>
